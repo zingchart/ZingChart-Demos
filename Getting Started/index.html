@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Your First Chart</title>
+
+	<!-- The ZingChart Javascript file can be loaded from ZingChart's CDN so you don't need to include the file on your machine. -->
+	<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+
+	<script>
+	// This is where you set the data for your chart
+	var chartData = {
+		"type": "bar", 	// <-- This is where you set the type of the chart you wish to render. Change it to "line" to see a line chart with the same data
+		"series": [ 	// <-- Series is where the values for your chart are stored.
+			{
+				"values": [35, 42, 67, 89, 25, 34, 67, 85], // <-- A values array contains all the data for a plot in your chart.
+			},
+			{
+				"values": [28, 57, 43, 56, 78, 99, 67, 28], // <-- This is another plot in your chart. Try changing the values and reloading the page.
+			}
+		]
+	};
+
+	// This is where we handle rendering your chart data.
+	window.onload = function () { 	// <-- We render your chart once the page has finished loading.
+		zingchart.render({ 			// <-- zingchart.render is the function to render your chart data.
+			id: "chartDiv",			// <-- id is the ID of the element at which you want to render your chart.
+			height: 400,			// <-- height is where you specify how tall the chart will render.
+			width: 600,				// <-- width is where you specify how wide the chart will render.
+			data: chartData			// <-- data is where you specify the chart data you wish to render. Since we made a variable above called chartData, we reference that down here.
+		});
+	};
+	</script>
+
+</head>
+<body>
+	<div id="chartDiv"></div>
+</body>
+</html>
