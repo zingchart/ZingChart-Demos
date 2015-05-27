@@ -11,17 +11,14 @@
 
 5. Change the `title` parameter in the path to be equal to `My+New+Chart`. The pluses get interpretted as spaces on the client side. Your path should now look like this...
 `localhost:4567/?title=My+New+Chart&type=line&series=[[1,4,3,12,33,16,42,97]]`
-
 Did the title update in your chart? Whoa! Cool!
 
 6. Change the `type` parameter in the path to equal `bar`. The path should now look like this...
 `localhost:4567/?title=My+New+Chart&type=bar&series=[[1,4,3,12,33,16,42,97]]`
-
 Did the chart change to a bar chart? How slick!
 
 7. Try adding a new array of values to the path. It should look like this...
 `localhost:4567/?title=My+New+Chart&type=bar&series=[[1,4,3,12,33,16,42,97],[* NEW VALUES GO IN HERE *]]`
-
 Your chart should now have a second series of data. Coolio!
 
 ### Using Already Formatted JSON
