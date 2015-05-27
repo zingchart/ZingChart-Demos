@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firebase Demo</title>
+<script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+</head>
+<body>
+<script>
+	// Get a reference to our data
+	var ref = new Firebase("https://glaring-fire-4231.firebaseio.com/");
+	var oSeriesData = {
+		aSeries0: [],
+		aSeries1: [],
+		aSeries2: [],
+		aSeries3: []
+	};
+
+	// Read our reference data
+	ref.on("value", function(snapshot) {
+		for(var n = 0; n < snapshot.val().length; n++){
+			oSeriesData['aSeries0'].push(snapshot.val()[n]['series0']);
+			oSeriesData['aSeries1'].push(snapshot.val()[n]['series1']);
+			oSeriesData['aSeries2'].push(snapshot.val()[n]['series2']);
+			oSeriesData['aSeries3'].push(snapshot.val()[n]['series3']);
+		}
+
+		// Render a chart using the reference data
+		zingchart.render({
+			id:"myChart",
+			width:"100%",
+			height:400,
+			data:{
+				"type":"line",
+				"title":{
+					"text":"Data Pulled from Firebase"
+				},
+				"plot":{
+					"line-width":1,
+					"aspect":"spline",
+					"marker":{
+						"visible":false
+					}
+				},
+				"series":[
+					{
+						"values":oSeriesData['aSeries0']
+					},
+					{
+						"values":oSeriesData['aSeries1']
+					},
+					{
+						"values":oSeriesData['aSeries2']
+					},
+					{
+						"values":oSeriesData['aSeries3']
+					}
+				]
+			}
+		});
+
+		// Disconnect from the Firebase server
+		Firebase.goOffline();
+	}, function (errorObject) {
+		console.log("The read failed: " + errorObject.code);
+	});
+</script>
+<h1>Firebase Demo</h1>
+<div id="myChart"></div>
+</body>
+</html>
