@@ -12,6 +12,7 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 * [Node.js and MongoDB](MongoDB/README.md) -- Create a server with Node.js and Express, connect to a MongoDB through Mongoose, and generate a chart on the client side with AJAX.
 * [Firebase and ZingChart](Firebase/README.md) -- Connect to a Firebase DB, store, and query data: all on the client side.
 * [Sinatra: The Microframework](Sinatra/README.md) -- Make a Ruby microapp that turns URL parameters and queries into charts.
+* [GeoJSON](GeoJSON/README.md) -- Generate a custom ZingChart map using the loadGeoJSON method and a GeoJSON file.
 
 ##Coming Soon...
 
