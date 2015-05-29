@@ -9,7 +9,7 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 
 ### JavaScript Demos
 * [Getting Started](JavaScript/Getting%20Started/README.md) -- Making your first chart with ZingChart
-* [Firebase and ZingChart](JavaScriptFirebase/README.md) -- Connect to a Firebase DB, store, and query data: all on the client side.
+* [Firebase and ZingChart](JavaScript/Firebase/README.md) -- Connect to a Firebase DB, store, and query data: all on the client side.
 * [GeoJSON](JavaScript/GeoJSON/README.md) -- Generate a custom ZingChart map using the loadGeoJSON method and a GeoJSON file.
 
 ### Node/Express Demos
