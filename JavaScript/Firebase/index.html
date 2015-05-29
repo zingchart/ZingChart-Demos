@@ -2,24 +2,25 @@
 <html>
 	<head>
 		<title>Firebase Demo</title>
-		<script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
-		<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script> <!-- The Firebase JS library -->
+		<script src="http://cdn.zingchart.com/zingchart.min.js"></script> <!-- The ZingChart library -->
 		<script>
-			// Get a reference to our data
+			// Get a reference to the ZingChart test data store
 			var ref = new Firebase("https://glaring-fire-4231.firebaseio.com/");
-			var oSeriesData = {
-				aSeries0: [],
-				aSeries1: [],
-				aSeries2: [],
-				aSeries3: []
+			// Empty object which will hold our series data
+			var seriesData = {
+				series_0: [],
+				series_1: [],
+				series_2: [],
+				series_3: []
 			};
-			// Read our reference data
+			// Read our reference data, population our seriesData object's arrays
 			ref.on("value", function(snapshot) {
 				for(var n = 0; n < snapshot.val().length; n++){
-					oSeriesData['aSeries0'].push(snapshot.val()[n]['series0']);
-					oSeriesData['aSeries1'].push(snapshot.val()[n]['series1']);
-					oSeriesData['aSeries2'].push(snapshot.val()[n]['series2']);
-					oSeriesData['aSeries3'].push(snapshot.val()[n]['series3']);
+					seriesData['series_0'].push(snapshot.val()[n]['series0']);
+					seriesData['series_1'].push(snapshot.val()[n]['series1']);
+					seriesData['series_2'].push(snapshot.val()[n]['series2']);
+					seriesData['series_3'].push(snapshot.val()[n]['series3']);
 				}
 				// Render a chart using the reference data
 				zingchart.render({
@@ -40,16 +41,16 @@
 						},
 						"series":[
 							{
-								"values":oSeriesData['aSeries0']
+								"values":seriesData['series_0']
 							},
 							{
-								"values":oSeriesData['aSeries1']
+								"values":seriesData['series_1']
 							},
 							{
-								"values":oSeriesData['aSeries2']
+								"values":seriesData['series_2']
 							},
 							{
-								"values":oSeriesData['aSeries3']
+								"values":seriesData['series_3']
 							}
 						]
 					}

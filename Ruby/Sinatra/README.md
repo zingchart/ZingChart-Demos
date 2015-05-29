@@ -1,4 +1,4 @@
-## Sinatra
+## Ruby > Sinatra
 
 ### Making a Chart from a URL
 1. Download or clone this repo.

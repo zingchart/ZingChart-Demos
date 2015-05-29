@@ -1,5 +1,5 @@
 {
-  "name": "MongoDB-Demo",
+  "name": "MongoDB",
   "version": "1.0.0",
   "description": "A demo chart rendered using data pulled from MongoDB documents. Uses MongoDB, Node, Express, Mongoose.",
   "main": "server.js",
@@ -26,7 +26,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.12.4",
-    "foundation-sites": "^5.5.2",
     "mongoose": "^4.0.3",
     "zingchart": "^2.1.0"
   }

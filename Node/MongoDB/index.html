@@ -3,7 +3,6 @@
   <head>
     <title>MongoDB/Mongoose Demo</title>
     <script type="text/javascript" src="./node_modules/zingchart/client/zingchart.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./node_modules/foundation-sites/css/foundation.min.css">
   </head>
   <body>
     <script>
@@ -18,19 +17,19 @@
     window.onload=function(){
       // GET request to localhost:3000/test, which has been configured to send back our db data
       var aData = JSON.parse(httpGet('http://localhost:3000/test'));
-      var oSeriesData = {
-        aSeries0: [],
-        aSeries1: [],
-        aSeries2: [],
-        aSeries3: []
+      var seriesData = {
+        series_0: [],
+        series_1: [],
+        series_2: [],
+        series_3: []
       };
 
-      // Push the data into the oSeriesData object's arrays.
+      // Push the data into the seriesData object's arrays.
       for(var n = 0; n < aData.length; n++){
-        oSeriesData['aSeries0'].push(aData[n]['series0']);
-        oSeriesData['aSeries1'].push(aData[n]['series1']);
-        oSeriesData['aSeries2'].push(aData[n]['series2']);
-        oSeriesData['aSeries3'].push(aData[n]['series3']);
+        seriesData['series_0'].push(aData[n]['series0']);
+        seriesData['series_1'].push(aData[n]['series1']);
+        seriesData['series_2'].push(aData[n]['series2']);
+        seriesData['series_3'].push(aData[n]['series3']);
       }
 
       // Render the chart using the data from Mongo
@@ -52,28 +51,23 @@
           },
           "series":[
             {
-              "values":oSeriesData['aSeries0']
+              "values":seriesData['series_0']
             },
             {
-              "values":oSeriesData['aSeries1']
+              "values":seriesData['series_1']
             },
             {
-              "values":oSeriesData['aSeries2']
+              "values":seriesData['series_2']
             },
             {
-              "values":oSeriesData['aSeries3']
+              "values":seriesData['series_3']
             }
           ]
         }
       });
     };
     </script>
-
-    <div class="row">
-      <div class="small-12 columns">
-      <h1>MongoDB Database Demo</h1>
-      <div id="myChart"></div>
-      </div>
-    </div>
+    <h1>MongoDB Database Demo</h1>
+    <div id="myChart"></div>
   </body>
 </html>

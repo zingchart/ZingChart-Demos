@@ -17,19 +17,19 @@
     window.onload=function(){
       // GET request to localhost:3000/test, which has been configured to send back our db data
       var aData = JSON.parse(httpGet('http://localhost:3000/test'));
-      var oSeriesData = {
-        aSeries0: [],
-        aSeries1: [],
-        aSeries2: [],
-        aSeries3: []
+      var seriesData = {
+        series_0: [],
+        series_1: [],
+        series_2: [],
+        series_3: []
       };
 
-      // Push the data into the oSeriesData object's arrays.
+      // Push the data into the seriesData object's arrays.
       for(var n = 0; n < aData['rows'].length; n++){
-        oSeriesData['aSeries0'].push(aData['rows'][n]['doc']['series0']);
-        oSeriesData['aSeries1'].push(aData['rows'][n]['doc']['series1']);
-        oSeriesData['aSeries2'].push(aData['rows'][n]['doc']['series2']);
-        oSeriesData['aSeries3'].push(aData['rows'][n]['doc']['series3']);
+        seriesData['series_0'].push(aData['rows'][n]['doc']['series0']);
+        seriesData['series_1'].push(aData['rows'][n]['doc']['series1']);
+        seriesData['series_2'].push(aData['rows'][n]['doc']['series2']);
+        seriesData['series_3'].push(aData['rows'][n]['doc']['series3']);
       }
 
       // Render the chart using the data from Mongo
@@ -51,16 +51,16 @@
           },
           "series":[
             {
-              "values":oSeriesData['aSeries0']
+              "values":seriesData['series_0']
             },
             {
-              "values":oSeriesData['aSeries1']
+              "values":seriesData['series_1']
             },
             {
-              "values":oSeriesData['aSeries2']
+              "values":seriesData['series_2']
             },
             {
-              "values":oSeriesData['aSeries3']
+              "values":seriesData['series_3']
             }
           ]
         }

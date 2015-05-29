@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = express();
 var aData = null;
 
-// Connect to the 'test' mongo database using mongoose
+// Connect to the `test` Mongo database using Mongoose
 mongoose.connect('mongodb://localhost/test');
 var db = mongoose.connection;
 var Document = null;
@@ -44,12 +44,12 @@ var server = app.listen(3000, function () {
 // Configure our app to serve static files from the current directory
 app.use(express.static('./'));
 
-// Display index.html when localhost:3000 is requested
+// Display `index.html` when `localhost:3000` is requested
 app.get('/', function (req, res) {
   res.sendFile('./index.html', {root: './'});
 });
 
-// Send all records when there's a GET request to localhost:3000/test
+// Send all records when there's a GET request to `localhost:3000/test`
 app.get('/test', function (req, res) {
 	Document.find(function(err, records){
 		aData = records;

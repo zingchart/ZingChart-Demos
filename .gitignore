@@ -1,2 +1,3 @@
-MongoDB/node_modules/*
+Node/MongoDB/node_modules/*
+Node/CouchDB/node_modules/*
 .DS_Store

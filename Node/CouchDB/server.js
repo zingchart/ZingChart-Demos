@@ -1,11 +1,11 @@
 var fs = require('fs');
 var express = require('express');
-var nano = require('nano')('http://localhost:5984');
+var nano = require('nano')('http://localhost:5984'); // Connect to the CouchDB running on port 5984
 var app = express();
-var db_name = 'test';
+var db_name = 'test'; // The name of the database to connect to
 var db = nano.use(db_name);
 
-function insert_doc(doc, tried){
+function insertDoc(doc, tried){
 	db.insert(doc, function(err, http_body, http_headers){
 		if(err){
 			if(err.message === 'no_db_file' && tried < 1){
@@ -19,11 +19,11 @@ function insert_doc(doc, tried){
 	});
 }
 
-// Populate the test database with data
+// Populate the `test` database with data from `test_data.json`
 fs.readFile('./test_data.json',function(err, data){
 	var aData = JSON.parse(data);
 	for (var n = 0; n < aData.length; n++){
-		insert_doc(aData[n],0);
+		insertDoc(aData[n],0);
 	}
 });
 
@@ -36,12 +36,12 @@ var server = app.listen(3000, function () {
 // Configure our app to serve static files from the current directory
 app.use(express.static('./'));
 
-// Display index.html when localhost:3000 is requested
+// Display `index.html` when localhost:3000 is requested
 app.get('/', function (req, res) {
   res.sendFile('./index.html', {root: './'});
 });
 
-// Send all records when there's a GET request to localhost:3000/test
+// Send all records when there's a GET request to `localhost:3000/test`
 app.get('/test', function (req, res) {
 	db.list({ include_docs: true }, function(err, body){
 		res.send(body);

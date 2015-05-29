@@ -3,19 +3,18 @@
   <head>
     <title>MySQL Demo</title>
     <script type="text/javascript" src="http://cdn.zingchart.com/zingchart.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
   </head>
   <body>
     <script>
 
       <?php
         // ACTION REQUIRED: Enter your database information below
-        $host = "my_host";
-        $usernm = "my_username";
-        $passwd = "my_password";
-        $dbname = "my_database";
-        $query = "SELECT * from my_table"; // Returns all records from my_table
-        $colname = "my_colname";
+        $host = "my_host"; // Your DB's hostname
+        $usernm = "my_username"; // The username used to connect to MySQL
+        $passwd = "my_password"; // The password associated with your username
+        $dbname = "my_database"; // The name of the database to connect to
+        $query = "SELECT * from my_table"; // The query that you'd like to use. This one returns all records from a table called `my_table`
+        $colname = "my_colname"; // The header for the column that you want to retrieve data from.
 
         $mysqli = new mysqli($host, $usernm, $passwd, $dbname);
         if($mysqli->connect_error) {
@@ -54,12 +53,7 @@
       });
     };
     </script>
-
-    <div class="row">
-      <div class="small-12 columns">
-      <h1>Database Data</h1>
-      <div id="myChart"></div>
-      </div>
-    </div>
+    <h1>Database Data</h1>
+    <div id="myChart"></div>
   </body>
 </html>
