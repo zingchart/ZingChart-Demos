@@ -13,8 +13,9 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 * [Firebase and ZingChart](Firebase/README.md) -- Connect to a Firebase DB, store, and query data: all on the client side.
 * [Sinatra: The Microframework](Sinatra/README.md) -- Make a Ruby microapp that turns URL parameters and queries into charts.
 * [GeoJSON](GeoJSON/README.md) -- Generate a custom ZingChart map using the loadGeoJSON method and a GeoJSON file.
+* [CouchDB](CouchDB/README.md) -- Create a server with Node.js and Express, connect to a CouchDB through Nano, and generate a chart on the client side.
 
 ##Coming Soon...
 
 * Redis
-* CouchDB
+* Ruby on Rails

@@ -1,0 +1,30 @@
+{
+  "name": "CouchDB",
+  "version": "1.0.0",
+  "description": "A demo chart rendered using data pulled from CouchDB documents. Uses CouchDB, Node, Express, Nano.",
+  "main": "server.js",
+  "repository":"http://github.com/ZingChart/ZingChart-Demos",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Nano",
+    "chart",
+    "charts",
+    "CouchDB",
+    "Node",
+    "NodeJS",
+    "Express",
+    "ExpressJS",
+    "ZingChart",
+    "ZingCharts"
+  ],
+  "author": "ZingChart",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4",
+    "nano": "^6.1.3",
+    "zingchart": "^2.1.0"
+  }
+}
