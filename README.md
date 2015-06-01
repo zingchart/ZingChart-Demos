@@ -18,6 +18,7 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 
 ### Ruby Demos
 * [Sinatra: The Microframework](Ruby/Sinatra/README.md) -- Make a Ruby microapp that turns URL parameters and queries into charts.
+* [Rails: A Full CRUD App](Ruby/Rails/README.md) -- Build a full CRUD (create, read, update, delete) app for managing charts.
 
 ### PHP Demos
 * [MySQL](PHP/MySQL/README.md) -- Generating a chart from MySQL data with PHP
