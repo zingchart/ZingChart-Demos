@@ -1,4 +1,5 @@
 Node/MongoDB/node_modules/*
 Node/CouchDB/node_modules/*
 Ruby/Rails/log
+Ruby/Rails/tmp
 .DS_Store
