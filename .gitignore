@@ -3,4 +3,5 @@ Node/CouchDB/node_modules/*
 Ruby/Rails/log
 Ruby/Rails/tmp
 Ruby/Rails/vendor
+*~
 .DS_Store
