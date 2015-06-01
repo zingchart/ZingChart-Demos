@@ -27,4 +27,4 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 
 * Node/Redis
 * Node/MySQL
-* Ruby/Ruby on Rails
+
