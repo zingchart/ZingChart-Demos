@@ -27,5 +27,3 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 ## Coming Soon...
 
 * Node/Redis
-* Node/MySQL
-
