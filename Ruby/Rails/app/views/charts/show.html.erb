@@ -1,0 +1,24 @@
+<p>
+	<strong>Name:</strong>
+	<%= @chart.name %>
+	<span class="actions">
+		<%= link_to edit_chart_path(@chart) do %>
+			<i class="fa fa-fw fa-pencil"></i>
+		<% end %>
+	</span>
+</p>
+
+<div id="chart"></div>
+
+<script>
+	zingchart.render({
+		id: "chart",
+		width: 600,
+		height: 400,
+		data: <%= @chart.json.to_s.html_safe %>
+	});
+</script>
+
+<%= link_to charts_path, id: "back" do %>
+	<i class="fa fa-fw fa-arrow-left"></i>Back to Gallery
+<% end %>

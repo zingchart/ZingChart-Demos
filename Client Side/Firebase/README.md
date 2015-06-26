@@ -1,4 +1,4 @@
-## JavaScript > Firebase
+## Client Side > Firebase
 [Firebase](http://www.firebase.com), a cloud services provider and backend as a service company, can be used to power the backend of an application, including data storage, user authentication, static hosting, and more. This demo connects to one of ZingChart's Firebase data stores to generate a chart on the client side.
 
 ###Usage
