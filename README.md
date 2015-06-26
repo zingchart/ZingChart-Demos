@@ -15,6 +15,7 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 ### Node/Express Demos
 * [MongoDB](Node/MongoDB/README.md) -- Create a server with Node.js and Express, connect to a MongoDB through Mongoose, and generate a chart on the client side with AJAX.
 * [CouchDB](Node/CouchDB/README.md) -- Create a server with Node.js and Express, connect to a CouchDB through Nano, and generate a chart on the client side.
+* [MySQL](Node/MySQL/README.md) -- Create a server with Node.js and Express, connect to and query a MySQL database using the Node MySQL module. Format the data for use in a chart.
 
 ### Ruby Demos
 * [Sinatra: The Microframework](Ruby/Sinatra/README.md) -- Make a Ruby microapp that turns URL parameters and queries into charts.
