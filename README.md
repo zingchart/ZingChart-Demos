@@ -13,8 +13,14 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 * [GeoJSON](Client%20Side/GeoJSON) -- Generate a custom ZingChart map using the loadGeoJSON method and a GeoJSON file.
 
 ### Node/Express Demos
+<<<<<<< HEAD
 * [MongoDB](Node/MongoDB) -- Create a server with Node.js and Express, connect to a MongoDB through Mongoose, and generate a chart on the client side with AJAX.
 * [CouchDB](Node/CouchDB) -- Create a server with Node.js and Express, connect to a CouchDB through Nano, and generate a chart on the client side.
+=======
+* [MongoDB](Node/MongoDB/README.md) -- Create a server with Node.js and Express, connect to a MongoDB through Mongoose, and generate a chart on the client side with AJAX.
+* [CouchDB](Node/CouchDB/README.md) -- Create a server with Node.js and Express, connect to a CouchDB through Nano, and generate a chart on the client side.
+* [MySQL](Node/MySQL/README.md) -- Create a server with Node.js and Express, connect to and query a MySQL database using the Node MySQL module. Format the data for use in a chart.
+>>>>>>> 3680806dd40795388c342e19b5a43b98d8b38bf4
 
 ### Ruby Demos
 * [Sinatra: The Microframework](Ruby/Sinatra) -- Make a Ruby microapp that turns URL parameters and queries into charts.
@@ -26,5 +32,3 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 ## Coming Soon...
 
 * Node/Redis
-* Node/MySQL
-
