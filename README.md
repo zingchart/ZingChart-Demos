@@ -23,6 +23,7 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 
 ### PHP Demos
 * [MySQL](PHP/MySQL) -- Generating a chart from MySQL data with PHP
+* [MySQL - Full Refresh](PHP/MySQL%20-%20Full%20Refresh) -- Generate chart from MySQL data with PHP, update the chart with new/updated data from the database after a set interval.
 
 ## Coming Soon...
 
