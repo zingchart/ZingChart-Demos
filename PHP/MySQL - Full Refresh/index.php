@@ -11,7 +11,7 @@
         id:"myChart",
         width:"100%",
         height:400,
-        dataurl:'db.php'
+        dataurl:'feed.php'
       });
     };
     </script>
