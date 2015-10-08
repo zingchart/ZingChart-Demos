@@ -61,7 +61,7 @@
 
                     //Determine if the the series that was recieved has already been seen.
                     //If the series has not been seen before, we need to track it in our myMap object.
-                    if ( !myMap[obj["series"]] ) {
+                    if ( typeof myMap[obj["series"]]  === "undefined") {
                         myMap[obj["series"]] = myConfig.series.length;
 
                         //Add a new object into our series, and set the text for our legend object.
