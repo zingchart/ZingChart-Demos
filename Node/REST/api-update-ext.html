@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script>
+        zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+    </script>
+    <style></style>
+</head>
+
+<body>
+    <div id='myChart'></div>
+    <script>
+        /*
+            Expected JSON format from our server for this demo:
+
+            {
+                value : Number,
+                description : String,
+                series : String
+            }
+            The value is an arbitrary value which will be mapped onto the y-axis.
+            The description in a string that is related to the value.
+            The series is an identifier to a unique collection of data.
+        */
+
+        // Setup a mapping object to keep track of incoming series data.
+        // Initially, we do not have any series. If we get a series tagged "dogs" first,
+        // we will push the new data into our series array and keep track of which index of that array
+        // represents dogs (in this case, dogs will be the 0 index.
+        var myMap = {};
+
+        //Setup a generic chart object without any data.
+        var myConfig = {
+            type: "area",
+            legend :{},
+            series: [],
+            tooltip: {
+                text: "description : %data-description <br> value : %v"
+            }
+        };
+
+        //Render out zingchart
+        zingchart.render({
+            id: 'myChart',
+            data: myConfig,
+            height: 400,
+            width: 600
+        });
+
+        setInterval(function() {
+
+            //Obtain the data through AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4) {
+
+                    //Recieve the data object from the server.
+                    var obj = JSON.parse(xhr.responseText);
+
+                    //Determine if the the series that was recieved has already been seen.
+                    //If the series has not been seen before, we need to track it in our myMap object.
+                    if ( !myMap[obj["series"]] ) {
+                        myMap[obj["series"]] = myConfig.series.length;
+
+                        //Add a new object into our series, and set the text for our legend object.
+                        myConfig.series.push({
+                            values : [],
+                            text : obj["series"],
+                            "data-description" : [] //This will be for our tooltips.
+                        })
+                    }
+
+                    //Now we are certain that our mapping object knows where the new series data should go
+                    //in our mySeries object.
+
+                    var index = myMap[obj["series"]] ;
+
+
+                    myConfig.series[index].values.push(obj.value);
+                    myConfig.series[index]['data-description'].push(obj["description"]);
+                    zingchart.exec('myChart', 'setdata', {
+                        data: myConfig
+                    });
+                }
+            }
+            xhr.open('GET', 'http://localhost:3000/setdata', true);
+            xhr.send(null);
+
+        }, 1500)
+    </script>
+</body>
+
+</html>
