@@ -16,4 +16,4 @@ This demo provides you with a template for connecting to your own MySQL database
 
 6. Bask in the glory of your chart!
 
-*Note the JDBC driver `.jar` in the WEB-INF/lib directory. Source: [Connector/J](https://dev.mysql.com/downloads/connector/j/)*
+*Note the required JDBC driver file `mysql-connector-java-5.0.8-bin.jar` in the WEB-INF/lib directory. Source: [Connector/J](https://dev.mysql.com/downloads/connector/j/)*
