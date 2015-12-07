@@ -69,7 +69,7 @@
                 "type":"bar",
                 "title":
                 {
-                    "text":"ZingChart Users Per Month"
+                    "text":"Data Pulled from MySQL Database"
                 },
                 "scale-x":
                 {
