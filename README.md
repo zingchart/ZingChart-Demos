@@ -29,7 +29,7 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 * [MySQL](JSP/MySQL) -- Generating a chart from MySQL data with JSP
 
 ### ASP.NET Demos
-* [C#/VB](ASP.NET/C#) -- Generating a chart passing data from server to client.
+* [C#/VB](ASP.NET/C%23) -- Generating a chart passing data from server to client.
 
 ## Coming Soon...
 
