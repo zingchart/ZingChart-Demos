@@ -16,7 +16,7 @@
 </div>
 
 <script type="text/javascript">
-    var tempDataArray  = @ViewData["valuesArray"]; // Tempdata array comes in as a JSON
+    var tempDataArray  = @ViewData["valuesArray"];     // Tempdata array comes in as a JSON
     var yourModelarray = @(Json.Encode(Model.values)); // Use System.WebHelpers to create a JSON out of your model
 
     //JSON configuration values represent chart styling & data

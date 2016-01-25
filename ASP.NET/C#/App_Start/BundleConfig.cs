@@ -12,7 +12,7 @@ namespace zingchartDemo
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            // Used to important zingChart and all associated modules
+            // Used to import zingChart and all associated modules
             bundles.Add(new ScriptBundle("~/bundles/zingchart").Include(
                       "~/Scripts/zingchart.min.js"));
 
