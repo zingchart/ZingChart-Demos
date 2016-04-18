@@ -12,25 +12,27 @@ If there's a demo that you'd like to see, submit an issue. We'll do our best to 
 * [Firebase and ZingChart](Client%20Side/Firebase) -- Connect to a Firebase DB, store, and query data: all on the client side.
 * [GeoJSON](Client%20Side/GeoJSON) -- Generate a custom ZingChart map using the loadGeoJSON method and a GeoJSON file.
 
+### JSP Demos
+* [MySQL](JSP/MySQL) -- Generating a chart from MySQL data with JSP
+
 ### Node/Express Demos
 * [MongoDB](Node/MongoDB) -- Create a server with Node.js and Express, connect to a MongoDB through Mongoose, and generate a chart on the client side with AJAX.
 * [CouchDB](Node/CouchDB) -- Create a server with Node.js and Express, connect to a CouchDB through Nano, and generate a chart on the client side.
 * [MySQL](Node/MySQL) -- Create a server with Node.js and Express, connect to and query a MySQL database using the Node MySQL module. Format the data for use in a chart.
 
-### Ruby Demos
-* [Sinatra: The Microframework](Ruby/Sinatra) -- Make a Ruby microapp that turns URL parameters and queries into charts.
-* [Rails: A Full CRUD App](Ruby/Rails) -- Build a full CRUD (create, read, update, delete) app for managing charts.
-
 ### PHP Demos
 * [MySQL](PHP/MySQL) -- Generating a chart from MySQL data with PHP
 * [MySQL - Full Refresh](PHP/MySQL%20-%20Full%20Refresh) -- Generate chart from MySQL data with PHP, update the chart with new/updated data from the database after a set interval.
 
-### JSP Demos
-* [MySQL](JSP/MySQL) -- Generating a chart from MySQL data with JSP
+### Python Demos
+* [Sqlite](Python/Django) -- Create a server with Python and Django, connect to Sqlite and generate a chart on the client side with AJAX.
 
-### ASP.NET Demos
-* [C#/VB](ASP.NET/C%23) -- Generating a chart passing data from server to client.
+### Ruby Demos
+* [Sinatra: The Microframework](Ruby/Sinatra) -- Make a Ruby microapp that turns URL parameters and queries into charts.
+* [Rails: A Full CRUD App](Ruby/Rails) -- Build a full CRUD (create, read, update, delete) app for managing charts.
 
 ## Coming Soon...
 
 * Node/Redis
+* PHP/Laravel
+* Python/Flask
