@@ -1,3 +1,5 @@
+## [New Repo Here](https://github.com/zingchart-demos/jsp-mysql)
+
 ## JSP > MySQL
 
 This demo provides you with a template for connecting to your own MySQL database.
