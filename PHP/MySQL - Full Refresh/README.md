@@ -1,3 +1,6 @@
+## [New Repo Here](https://github.com/zingchart-demos/php-mysql-refresh)
+
+
 ## PHP > MySQL - Full Refresh
 
 This demo provides you with a template for connecting to your own MySQL database and retrieving new/updated data after a set interval.
