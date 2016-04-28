@@ -9,3 +9,5 @@
 3. Open `index.html` in your most favorite (or least favorite) browser.
 
 4. Try not to have your socks blown off.
+
+## [New Repo Here](https://github.com/zingchart-demos/firebase)
