@@ -1,3 +1,5 @@
+## [New Repo Here](https://github.com/zingchart-demos/hello-world)
+
 ## Getting started with ZingChart
 Recommended for ZingChart newbies! 
 
