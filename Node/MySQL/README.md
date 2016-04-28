@@ -1,3 +1,6 @@
+
+## [New Repo Here](https://github.com/zingchart-demos/node-express-mysql)
+
 ## Node/Express > MySQL
 
 This is an example of a Node/Express application that connects to a MySQL database and returns data formatted for ZingChart on a GET request to `localhost:3000/test`.
