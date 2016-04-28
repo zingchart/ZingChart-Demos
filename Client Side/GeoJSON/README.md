@@ -9,3 +9,5 @@ Introduced with ZingChart 2.1.0, the ZingChart GeoJSON module allows you to easi
 3. Open `index.html` in your browser.
 
 4. See the map.
+
+##[New Repo Here](https://github.com/zingchart-demos/geojson)
