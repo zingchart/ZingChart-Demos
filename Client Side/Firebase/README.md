@@ -1,3 +1,5 @@
+## [New Repo Here](https://github.com/zingchart-demos/firebase)
+
 ## Client Side > Firebase
 [Firebase](http://www.firebase.com), a cloud services provider and backend as a service company, can be used to power the backend of an application, including data storage, user authentication, static hosting, and more. This demo connects to one of ZingChart's Firebase data stores to generate a chart on the client side.
 
@@ -10,4 +12,4 @@
 
 4. Try not to have your socks blown off.
 
-## [New Repo Here](https://github.com/zingchart-demos/firebase)
+
