@@ -1,3 +1,5 @@
+## [New Repo Here](https://github.com/zingchart-demos/ruby-sinatra)
+
 ## Ruby > Sinatra
 
 ### Making a Chart from a URL
