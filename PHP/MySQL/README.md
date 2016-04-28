@@ -1,3 +1,5 @@
+## [New Repo Here](https://github.com/zingchart-demos/php-mysql)
+
 ## PHP > MySQL
 
 This demo provides you with a template for connecting to your own MySQL database.
