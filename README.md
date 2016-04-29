@@ -1,3 +1,8 @@
+# We have move this repository to an organization with separate repositories for each demo! 
+## [https://github.com/zingchart-demos](https://github.com/zingchart-demos)
+
+---
+
 # ZingChart Demos
 
 Demos and tutorials for using ZingChart in with different environments, tools, libraries, frameworks, servers, and databases. We've done our best to make sure everything is well commented so that you can see how each demo was done, step by step.
